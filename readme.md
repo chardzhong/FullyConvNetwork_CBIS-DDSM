@@ -6,4 +6,4 @@ However, we can circumvent this image size requirement while also enjoying the q
 
 
 ## Performance
-The model was able to demonstrate improved loss over training, achieving the highest testing accuracy of 67%. However, further hyperparameter testing could help improve testing accuracy and overfitting on training data.
+The model was able to demonstrate improved loss over training however further hyperparameter testing could help improve performance.
