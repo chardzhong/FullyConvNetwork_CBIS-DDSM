@@ -7,11 +7,13 @@ This repository contains the exported Google Colab notebook of our model. Inspir
 ## A Revisit
 Since then, I have been trying to better understand the field of FCNs to produce a better performing model. Unlike traditional CNNs which classify examples at the whole picture level, FCNs make predictions at every pixel and have been demonstrated to perform well in the task of semantic segmentation (Long et al., 2014). Naturally, this makes it well suited to the task of classifying mammograms, where we hope the model is able to identify specific patches of cancerous cells within the image. Even more so, FCNs (with the use of pooling operations) are translation invariant and equivariant, and can identify patterns regardless of their spatial coordinates.
 
-Shen et al., (2019) also use the CBIS-DDSM dataset and a FCN to perform whole image classification. Patch classifiers were first trained on ROI annotations provided with each sample of the dataset and then used as high level filters in the top convolutional layers of the whole image model. 
+Shen et al., (2019) also use the CBIS-DDSM dataset and a FCN to perform whole image classification. Patch classifiers were first trained on ROI annotations provided with each sample of the dataset and then used as high level filters in the top convolutional layers of the whole image model. Achieved AUC of 0.91 (sensitivity: 86.1%, specificity: 80.1%) with 4 model average of Resnet or VGG-based patch classifiers and top layers.
 
+Yang & Hui, (2021) address issues of loss of spatial detail information within a FCN that result in inconsistent class labels and missing small targets.
 ...
 
 Long, J., Shelhamer, E., & Darrell, T. (2014, November 14). Fully Convolutional Networks for Semantic Segmentation. arXiv.org. https://arxiv.org/abs/1411.4038v2
 
 Shen, L., Margolies, L. R., Rothstein, J. H., Fluder, E., McBride, R., & Sieh, W. (2019, August 29). Deep Learning to Improve Breast Cancer Detection on Screening Mammography - Scientific Reports. Nature. https://doi.org/10.1038/s41598-019-48995-4
 
+Yang, W., & Hui, Y. (2021). Image scene analysis based on improved FCN model. International Journal of Pattern Recognition and Artificial Intelligence, 35(15). https://doi.org/10.1142/s0218001421520200 
