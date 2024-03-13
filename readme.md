@@ -1,6 +1,7 @@
 # Fully Convolutional Network Image Classification on the CBIS-DDSM dataset
 
 This repository contains the exported Google Colab notebook of our model. Inspired by the story of BakeryScan, a model designed to identify pastry types to expedite the checkout process in bakeries which was found to have incredible transferability to the seemingly unrelated task of classifying cancerous cells under a microscope ([article](https://towardsdatascience.com/bakeryscan-and-cyto-aiscan-52475b3cb779)), we set out to see if we could build a classification model on a known dataset of cancer imaging. Working with the Curated Breast Imaging Subset of Digital Database for Screening Mammography (CBIS-DDSM), which contains 2,620 scanned film mammography studies of varying dimensions, we aimed to build a CNN that could accept inputs without fixed dimensions and settled on using a fully convolutional model for its inherent ability to operate on inputs of any size. While our model was technically able to accept heterogeneous input dimensions, it showed clear issues of overfitting to the training data.
+
 ![Untitled](https://github.com/chardzhong/FullyConvNetwork_CBIS-DDSM/assets/44122104/2fb8a17d-2f22-4dd0-a6c1-49665215c7c8)
 
 ## A Revisit
